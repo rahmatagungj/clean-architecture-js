@@ -11,7 +11,7 @@ export default class RegistrationSpesification {
 
       const resultPerson = repository.savePerson(person)
 
-      if (person) return new Payload('success',resultPerson)
+      if (resultPerson) return new Payload('success',resultPerson)
 
       return new Payload('error', 'Registration failed')
     }
