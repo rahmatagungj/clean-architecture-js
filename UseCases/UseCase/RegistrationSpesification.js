@@ -2,7 +2,7 @@ import Payload from "../Payload/Payload"
 import RegistrationRepository from "../../Infrastucture/Repository/RegistrationRepository"
 import RegistationAggregate from "../../Domain/PersonRegistration/Aggregate/RegistrationAggregate"
 
-export default class RegistrationUseCase {
+export default class RegistrationSpesification {
     run (request) {
       const {name, age} = request
 
