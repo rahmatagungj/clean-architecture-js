@@ -9,12 +9,10 @@ export default class RegistrationSpesification {
       let repository = new RegistrationRepository()
       let person = new RegistationAggregate(name, age)
 
-      repository.savePerson(person)
+      const resultPerson = repository.savePerson(person)
 
-      // ini payload
-      if (person) return new Payload('success',person)
+      if (person) return new Payload('success',resultPerson)
 
-      // ini payload
       return new Payload('error', 'Registration failed')
     }
 }
