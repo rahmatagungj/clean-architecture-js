@@ -2,8 +2,12 @@ import RegistrationGateway from "../Gateway/RegistrationGateway";
 
 export default class RegistrationRepository {
   savePerson (person) {
-    let gateway = new RegistrationGateway()
+    const gateway = new RegistrationGateway()
 
-    gateway.addRegistration(person)
+    if (!gateway.addRegistration(person)) return false
+
+    const allPerson = gateway.getRegistrations()
+
+    return allPerson
   }
 }
