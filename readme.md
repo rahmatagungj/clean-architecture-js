@@ -14,6 +14,4 @@ This project created for learning perpose, concepting clean architecture with ja
 - `src/Domain` - Domain object contain aggregate 
 
 ## Run
-```bash
-npm run start
-```
+You can run with opening example folder, choose one of example and run it.
