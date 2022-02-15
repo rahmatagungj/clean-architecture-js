@@ -1,5 +1,5 @@
-import { registration } from "./DB/registration"
-import RegistrationController from "./src/Web/Http/RegistrationController"
+import { registration } from "../../DB/registration"
+import RegistrationController from "../../src/Web/Http/RegistrationController"
 
 const web = new RegistrationController()
 
