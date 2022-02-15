@@ -5,7 +5,7 @@ This project created for learning perpose, concepting clean architecture with ja
 ## File Structure
 
 - `DB` - Database file
-- `example-with-framework` - Example with framework to run architecture
+- `example` - Example with framework to run architecture
 - `src/Web/Http` - Main web controller 
 - `src/UseCases/Payload` - All Payload format of use cases
 - `src/UseCases/UseCase` - Use case to run specification 
