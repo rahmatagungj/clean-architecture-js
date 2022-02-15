@@ -4,13 +4,13 @@ This project created for learning perpose, concepting clean architecture with ja
 
 ## File Structure
 
-`DB` - Database file
-`Web\Http` - Main web controller 
-`UseCases\Payload` - All Payload format of use cases
-`UseCases\UseCase` - Use case to run specification 
-`Infrastructure\Gateway` - Gateway to operating between web and database
-`Infrastructure\Repository` - Repository to saving data via gateway
-`Domain` - Domain object contain aggregate 
+- `DB` - Database file
+- `Web\Http` - Main web controller 
+- `UseCases\Payload` - All Payload format of use cases
+- `UseCases\UseCase` - Use case to run specification 
+- `Infrastructure\Gateway` - Gateway to operating between web and database
+- `Infrastructure\Repository` - Repository to saving data via gateway
+- `Domain` - Domain object contain aggregate 
 
 ## Run
 ```bash
