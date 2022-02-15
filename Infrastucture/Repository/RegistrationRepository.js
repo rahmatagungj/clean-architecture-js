@@ -1,12 +1,14 @@
 import RegistrationGateway from "../Gateway/RegistrationGateway";
 
 export default class RegistrationRepository {
+  constructor () {
+    this.gateway = new RegistrationGateway()
+  }
+
   savePerson (person) {
-    const gateway = new RegistrationGateway()
+    if (!this.gateway.addRegistration(person)) return false
 
-    if (!gateway.addRegistration(person)) return false
-
-    const allPerson = gateway.getRegistrations()
+    const allPerson = this.gateway.getRegistrations()
 
     return allPerson
   }
