@@ -1,4 +1,4 @@
-import { registration } from "../../DB/registration"
+import { registration } from "../../../DB/registration"
 
 export default class RegistrationGateway {
   /**
