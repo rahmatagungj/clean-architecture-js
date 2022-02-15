@@ -1,13 +1,13 @@
-let ALL_REGISTRATION = []
+import { registration } from "../../DB/registration"
 
 export default class RegistrationGateway {
   addRegistration (person) {
-    ALL_REGISTRATION.push(person)
+    registration.push(person)
 
-    return ALL_REGISTRATION
+    return registration
   }
   
   getRegistrations () {
-    return ALL_REGISTRATION
+    return registration
   }
 }
