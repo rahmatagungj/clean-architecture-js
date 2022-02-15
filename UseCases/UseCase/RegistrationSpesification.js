@@ -3,16 +3,18 @@ import RegistrationRepository from "../../Infrastucture/Repository/RegistrationR
 import RegistationAggregate from "../../Domain/PersonRegistration/Aggregate/RegistrationAggregate"
 
 export default class RegistrationSpesification {
-    run (request) {
-      const {name, age} = request
+  constructor () {
+    this.repository = new RegistrationRepository()
+  }
 
-      let repository = new RegistrationRepository()
-      let person = new RegistationAggregate(name, age)
+  run (request) {
+    const {name, age} = request
+    let person = new RegistationAggregate(name, age)
 
-      const resultPerson = repository.savePerson(person)
+    const resultPerson = this.repository.savePerson(person)
 
-      if (resultPerson) return new Payload('success',resultPerson)
+    if (resultPerson) return new Payload('success',resultPerson)
 
-      return new Payload('error', 'Registration failed')
-    }
+    return new Payload('error', 'Registration failed')
+  }
 }
