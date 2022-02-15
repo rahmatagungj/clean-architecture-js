@@ -11,7 +11,9 @@ export default class RegistrationSpesification {
     const {name, age} = request
     let person = new RegistationAggregate(name, age)
 
-    const resultPerson = this.repository.savePerson(person)
+    let registration = person.getRegistration()
+
+    const resultPerson = this.repository.savePerson(registration)
 
     if (resultPerson) return new Payload('success',resultPerson)
 
