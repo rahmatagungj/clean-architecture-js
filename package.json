@@ -1,14 +1,14 @@
 {
-  "name": "ddd-js",
-  "version": "1.0.0",
-  "description": "",
+  "name": "clean-architecture-js",
+  "version": "1.0.2",
+  "description": "This project created for learning perpose, concepting clean architecture with javascript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node -r esm index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["clean", "architecture", "javascript"],
+  "author": "Rahmat Agung Julians",
   "license": "ISC",
   "dependencies": {
     "esm": "^3.2.25"
