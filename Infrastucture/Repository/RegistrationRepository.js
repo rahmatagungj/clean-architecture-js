@@ -6,6 +6,11 @@ export default class RegistrationRepository {
   }
 
   savePerson (person) {
+    /**
+     * 
+     * @param {Object} person object of person contains name and age
+     * @returns 
+     */
     if (!this.gateway.addRegistration(person)) return false
 
     const allPerson = this.gateway.getRegistrations()

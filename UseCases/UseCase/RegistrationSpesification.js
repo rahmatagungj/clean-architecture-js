@@ -7,6 +7,11 @@ export default class RegistrationSpesification {
     this.repository = new RegistrationRepository()
   }
 
+  /**
+   * 
+   * @param {*} request all data came from controller
+   * @returns 
+   */
   run (request) {
     const {name, age} = request
     let person = new RegistationAggregate(name, age)

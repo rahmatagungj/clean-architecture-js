@@ -1,4 +1,9 @@
 class Person{
+  /**
+   * 
+   * @param {String} name name of person 
+   * @param {Number} age age of person
+   */
   constructor (name, age) {
     this.name = name
     this.age = age
@@ -12,6 +17,11 @@ class Person{
 }
 
 export default class RegistationAggregate {
+  /**
+   * 
+   * @param {String} name name of person 
+   * @param {Number} age age of person
+   */
   constructor (name, age) {
     this.name = name
     this.age = age
