@@ -3,6 +3,12 @@ class Person{
     this.name = name
     this.age = age
   }
+
+  getPerson () {
+    const person = { name: this.name, age: this.age }
+    
+    return person
+  }
 }
 
 export default class RegistationAggregate {
@@ -10,10 +16,10 @@ export default class RegistationAggregate {
     this.name = name
     this.age = age
   }
-  
-  getPerson () {
+
+  getRegistration () {
     const person = new Person(this.name, this.age)
-    
-    return person
+
+    return person.getPerson()
   }
 }
