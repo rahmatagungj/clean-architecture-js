@@ -4,11 +4,11 @@ const express = require('express')
 const router = express.Router()
 
 router.post("/registration/:name/:age", function(req, res) {
-  let regitration = new RegistrationController().register(
+  let registration = new RegistrationController().register(
     {name: req.params.name, age: req.params.age}
     )
 
-  res.json(regitration)
+  res.json(registration)
 })
 
 module.exports = router
